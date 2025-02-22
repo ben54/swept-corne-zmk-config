@@ -37,12 +37,6 @@
             bindings = <&sk LC(LS(LA(LGUI)))>, <&sk LC(LS(LALT))>;
         };
 
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LS(LG(SLASH))>, <&kp LS(LG(DOT))>;
-        };
     };
     
     keymap {
@@ -73,8 +67,8 @@
             // +------------------------------------------------------------------------------------+
 
             bindings = <
-&trans  &kp DQT    &kp LT     &kp GT     &kp PERCENT  &kp CARET         &kp GRAVE  &kp TILDE   &kp LBKT  &kp RBKT  &kp CAPS   &trans
-&trans  &kp TAB    &kp UNDER  &kp PLUS   &kp EQUAL    &kp EXCL          &kp AMPS   &kp QMARK   &kp LPAR  &kp RPAR  &kp MINUS  &trans
+&bt BT_NXT  &kp DQT    &kp LT     &kp GT     &kp PERCENT  &kp CARET         &kp GRAVE  &kp TILDE   &kp LBKT  &kp RBKT  &kp CAPS   &trans
+&bt BT_PRV  &kp TAB    &kp UNDER  &kp PLUS   &kp EQUAL    &kp EXCL          &kp AMPS   &kp QMARK   &kp LPAR  &kp RPAR  &kp MINUS  &trans
 &trans  &kp COLON  &kp HASH   &kp SLASH  &kp STAR     &kp BSLH          &kp PIPE   &kp DOLLAR  &kp LBRC  &kp RBRC  &kp AT     &trans
                              &trans     &mo NUMBERS  &mt LSHIFT RET    &kp SPACE  &trans      &none
             >;
@@ -106,7 +100,7 @@
 
             bindings = <
 &none  &none     &none     &none       &none      &none      &kp PAGE_DOWN  &none           &kp UP         &none         &kp PAGE_UP  &none
-&none  &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp TAB    &kp HOME       &kp LEFT        &kp DOWN       &kp RIGHT     &kp END      &none
+&kp LA(TAB)  &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp TAB    &kp HOME       &kp LEFT        &kp DOWN       &kp RIGHT     &kp END      &none
 &none  &none     &none     &none       &none      &none      &none          &msc SCRL_DOWN  &none          &msc SCRL_UP  &none        &none
                            &trans      &kp BSPC   &kp RET    &kp SPACE      &trans          &mo SHORTCUTS
             >;
