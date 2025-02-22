@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LS(LG(SLASH))>, <&kp LS(LG(J))>;
+            bindings = <&kp LS(LG(SLASH))>, <&kp LS(LG(DOT))>;
         };
     };
     
