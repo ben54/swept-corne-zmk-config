@@ -83,7 +83,7 @@
             // +------------------------------------------------------------------------------------+
 
             bindings = <
-&none  &trans  &trans      &kp C_VOLUME_UP    &trans      &trans     &trans         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &none
+&bt BT_CLR_ALL  &trans  &trans      &kp C_VOLUME_UP    &trans      &trans     &trans         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &none
 &none  &trans   &kp C_PREV  &kp C_MUTE         &kp C_NEXT  &trans     &kp C_AL_CALC  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &none
 &none  &trans   &trans      &kp C_VOLUME_DOWN  &trans      &trans     &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &none
                             &trans             &kp BSPC    &kp RET    &kp SPACE      &trans           &none
